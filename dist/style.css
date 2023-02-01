@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    display:flex;
+    flex-direction: column;
+}
+
+#container{
+    background-image: url('avo-bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center top;
+    padding: 10px;
+}
+
+.header-size{
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.logo-ctn{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.logo-img{
+    border:  #4C8A42 2px solid;
+}
+
+ul,li {
+  padding: 3px;
+
+}
+
+.typed {
+    overflow: hidden;
+    white-space: nowrap;
+    width: fit-content;
+    margin: 0 auto;
+    display:inline-block;
+    border-right: #4C8A42 2px solid;
+    animation: typing 2s steps(30, end) forwards, blinking 1s infinite;
+}
+
+h1{
+    text-transform: lowercase;
+}
+h2 {
+    text-transform: lowercase;
+    font-weight: 700;
+    font-size: 1.5em;
+    color:#E39859;
+}
+h3{
+    color:#E39859;
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+}
+
+h4{
+    color:#4C8A42;
+    font-size:1.7em;
+    font-weight: 300;
+}
+
+.main-size{
+    flex-grow:2;
+}
+
+.main-ctn{
+    margin-left: 25px;
+}
+.main-title{
+    margin-top: 300px;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight:200;
+}
+
+.mini-title{
+    font-size: 0.2em;
+    line-height: 0;
+}
+
+@keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+}
+
+@keyframes blinking {
+    0% {border-right-color: transparent}
+    50% {border-right-color: #4C8A42}
+    100% {border-right-color: transparent}
+}
+.footer-size{
+flex-grow: 0;
+text-align: center;
+font-size: 0.5em;
+}
