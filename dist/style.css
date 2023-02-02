@@ -35,9 +35,9 @@
     border:  #4C8A42 2px solid;
 }
 
-ul,li {
-  padding: 3px;
-
+a{
+  padding: 2px;
+    text-decoration: none;
 }
 
 .typed {
@@ -88,6 +88,23 @@ h4{
 .mini-title{
     font-size: 0.2em;
     line-height: 0;
+}
+
+.menu-ctn{
+    margin-top: 200px;
+}
+
+form{
+    width: 300px;
+    margin: 175px 0px 0px 150px;
+}
+
+#about-txt{
+    width: 400px;
+}
+
+.about-ctn{
+    margin: 250px 0px 0px 100px;
 }
 
 @keyframes typing {
