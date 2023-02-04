@@ -16,7 +16,6 @@ function header () {
     logo.setAttribute('alt', 'Sliced Citrus Fruits Logo');
     logo.setAttribute('class', 'logo-img');
     logoImgDiv.appendChild(logo);  
-      
 
     //Div container with logo title
     const logoTitleDiv = document.createElement('div');
@@ -26,29 +25,32 @@ function header () {
     h4.innerHTML = 'market';
     logoTitleDiv.append(h3, h4);
 
+    logoCtn.append(logoImgDiv, logoTitleDiv);
+
     //Nav container
     const navCtn = document.createElement('div');
     navCtn.classList.add('nav-ctn');
 
-    //Div container with navigation links
-    const navigation = document.createElement('NAV');
-    const ul = document.createElement('ul');
-    const li = document.createElement('li');
+    const list = document.createElement('ul');
+    list.classList.add('nav');
+    
 
-    const navArray = ['home', 'about', 'menu', 'contact'];
+    let navArray = ['home', 'about', 'menu', 'contact'];
 
-    // navArray.forEach = (link) => {
-        li.innerText= 'home about menu contact';
-        ul.append(li);
-        navigation.append(ul);
-        navCtn.appendChild(navigation)
+    for(let i=0; i < navArray.length; i++){
+        let item = document.createElement('li');
+  
+        item.innerText= navArray[i];
+        item.setAttribute("id", navArray[i]);
+        list.appendChild(item);
+    }
 
-        // return navigation;
+    navCtn.append(list);
 
-    // }
+    
 
     //append all content to header
-    logoCtn.append(logoImgDiv, logoTitleDiv);
+   
     header.append(logoCtn, navCtn);
 
     return header;

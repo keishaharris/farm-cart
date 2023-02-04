@@ -20,10 +20,13 @@ function menu(){
     ]
 
     menuList.forEach(item => {
+        console.log(item);
         const menuDiv = document.createElement('div');
-        menuDiv.innerText = 'link';
+        menuDiv.innerText = item;
         menuCtn.append(menuDiv);
 
     })
+
+    return menuCtn
 }
 export default menu

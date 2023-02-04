@@ -5,29 +5,28 @@
     font-family: 'Montserrat', sans-serif;
     color: white;
     text-transform: uppercase;
-    display:flex;
-    flex-direction: column;
+    
 }
 
 #container{
-    background-image: url('avo-bg.jpeg');
+    background-image: url('images/avo-bg.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
     background-position: center top;
     padding: 10px;
+    display:flex;
+    flex-direction: column;
 }
 
 .header-size{
     flex-grow: 0;
     display: flex;
-    flex-direction: row;
     justify-content:space-between;
 }
 
 .logo-ctn{
     display:flex;
-    flex-direction: row;
     gap: 10px;
 }
 
@@ -35,9 +34,18 @@
     border:  #4C8A42 2px solid;
 }
 
-a{
+ul{
+    display: flex;  
+    width: 100%;
+}
+
+li{
   padding: 2px;
-    text-decoration: none;
+list-style-type:none;
+}
+
+li:hover{
+    cursor: pointer;
 }
 
 .typed {
@@ -95,8 +103,13 @@ h4{
 }
 
 form{
-    width: 300px;
     margin: 175px 0px 0px 150px;
+}
+
+input, label, textarea{
+    display: block;
+    margin: 2px;
+    width: 35%;;
 }
 
 #about-txt{
@@ -104,7 +117,7 @@ form{
 }
 
 .about-ctn{
-    margin: 250px 0px 0px 100px;
+    margin: 250px 0px 0px 50px;
 }
 
 @keyframes typing {
