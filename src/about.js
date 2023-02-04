@@ -10,7 +10,7 @@ span.innerText= `we love all things health. farm market was created for you heal
 we care about providing you with the most nutritious and healthies smoothies and
 shakes in the city! Come stop by and support our health movement. `
 
-element.appendChild(h1, span)
+element.append(h1, span)
 
 }
 
